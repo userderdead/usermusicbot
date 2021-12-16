@@ -30,7 +30,7 @@ sudo apt-get install youtube-dl -y
 
 3) Cloning the Repo
 ```bash
-git clone https://github.com/Lost-In-Dark/TG-MusicPlayer
+git clone https://github.com/userderdead/usermusicbot
 cd TG-MusicPlayer
 ```
 
