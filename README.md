@@ -31,7 +31,7 @@ sudo apt-get install youtube-dl -y
 3) Cloning the Repo
 ```bash
 git clone https://github.com/userderdead/tgvc-userbot
-cd TG-MusicPlayer
+cd usermusicbot
 ```
 
 4) Rename `example.env` to `.env` and Fill in the Environment Variables
