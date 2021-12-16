@@ -1,13 +1,13 @@
 {
-    "name": "TG-MusicPlayer",
+    "name": "userbotmusic",
     "description": "A Telegram Userbot to play Songs in Voice Chat",
-    "logo": "https://telegra.ph/file/12a12ad933f3f972deb61.jpg",
+    "logo": "https://telegra.ph/file/8636a5d06bcadcf6a6eff.jpg",
     "keywords": [
         "Telegram",
         "VCBot",
         "MusicPlayer"
     ],
-    "repository": "https://github.com/Lost-In-Dark/TG-MusicPlayer",
+    "repository": "https://github.com/userderdead/usermusicbot",
     "env": {
         "SESSION": {
             "description": "Pyrogram String Session",
