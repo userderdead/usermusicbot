@@ -70,4 +70,23 @@ async def skip_item(chat_id, h):
     
 @call_py.on_stream_end()
 async def on_end_handler(client, update: Update):
+  if isinstance(update, StreamAudioEnded):
+    chat_id = update.chat_id
+    print(chat_id)
+    op = await skip_current_song(chat_id)
+    if op==1:
+      await bot.send_message(chat_id, "`Nothing Added I'm, Leaving Voice Chat...`")
+    elif op==2: 
+       await bot.send_message(chat_id, "**Some Error Getting** \n`Clearing the Queues and Leaving the Voice Chat...`")
+    else: 
+       await bot.send_message(chat_id, f"**🔥 This One** \n[{op[0]}]({op[1]}) | `{op[2]}`", disable_web_page_preview=True)
+ else:
+    pass 
+
   
+# When someone ends the Voice Chat without stopping the Playback
+  
+@call_py.on_closed_voice_chat()
+async def close_handler(client: PyTgCalls, chat_id: int):
+  if chat_id in QUEUE:
+     clear_queue(chat_id)
