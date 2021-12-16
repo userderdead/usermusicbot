@@ -48,4 +48,4 @@ async def restart(client, m: Message):
     
 @Client.on_message(contact_filter & filters.command(['help'], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
-    HELP = f"**HELP MENU 🛠** \n\n__USER COMMANDS__ (Anyone can Use if `GROUP_MODE` is set to `True`): \n`{HNDLR}play` \n`{HNDLR}vplay` \n`{HNDLR}stream
+   HELP = f"**HELP MENU 🛠** \n\n__USER COMMANDS__ (Anyone can Use if `GROUP_MODE` is set to `True`): \n`{HNDLR}play` \n`{HNDLR}vplay` \n`{HNDLR}stream
