@@ -39,5 +39,13 @@ async def ping(client, m: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(f"`{delta_ping * 1000:.3f} ms` \n**Standtime ⏳** - `{uptime}`")
     
-    
 @Client.on_message(contact_filter & filters.command(['restart'], prefixes=f"{HNDLR}"))
+async def restart(client, m: Message):
+   await m.reply("`Restarting...`")
+   os.execl(sys.executable, sys.executable, *sys.argv)
+   # You probably don't need it but whatever
+   quit()
+    
+@Client.on_message(contact_filter & filters.command(['help'], prefixes=f"{HNDLR}"))
+async def help(client, m: Message):
+    HELP = f"**HELP MENU 🛠** \n\n__USER COMMANDS__ (Anyone can Use if `GROUP_MODE` is set to `True`): \n`{HNDLR}play` \n`{HNDLR}vplay` \n`{HNDLR}stream
