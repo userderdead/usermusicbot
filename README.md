@@ -30,7 +30,7 @@ sudo apt-get install youtube-dl -y
 
 3) Cloning the Repo
 ```bash
-git clone https://github.com/userderdead/usermusicbot
+git clone https://github.com/userderdead/tgvc-userbot
 cd TG-MusicPlayer
 ```
 
