@@ -45,7 +45,7 @@ async def playfrom(client, m: Message):
                      stream_type=StreamType().pulse_stream,
                   )
                   add_to_queue(chat_id, songname, location, link, "Audio", 0)
-                  await m.reply(f"**Started Playing Songs from {chat} ▶** \n**🎧 SONG** : [{songname}]({link}) \n**💬 CHAT** : `{chat_id}`", disable_web_page_preview=True)
+                  await m.reply(f"**Started Playing Songs from {chat} ▶** \n**🔥 SONG** : [{songname}]({link}) \n**💬 CHAT** : `{chat_id}`", disable_web_page_preview=True)
          await hmm.delete()
          await m.reply(f"Added **{limit}** SONGS to Queue")
       except Exception as e:
