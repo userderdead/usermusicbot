@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pytgcalls import PyTgCalls
 
 # For Local Deploy
-if os.path.exists(".env")
+if os.path.exists(".env"):
     load_dotenv(".env")
   
 # Necessary Vars
