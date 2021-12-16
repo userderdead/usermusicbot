@@ -9,7 +9,7 @@ if os.path.exists(".env")
   
 # Necessary Vars
 API_ID = int(os.getenv("API_ID", "6"))
-API_HASH = os.getenv("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+API_HASH = os.getenv("API_HASH", "803b9bf62395f64a16a299fce45f3482")
 SESSION = os.getenv("SESSION")
 HNDLR = os.getenv("HNDLR", ".")
 GROUP_MODE = os.getenv("GROUP_MODE", "True")
