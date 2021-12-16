@@ -15,7 +15,7 @@ async def skip_current_song(chat_id):
         await call_py.leave_group_call(chat_id)
         clear_queue(chat_id)
         return 1
-      else:
+     else:
        try:
         songname = chat_queue[1][0]
         url = chat_queue[1][1]
