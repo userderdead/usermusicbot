@@ -37,7 +37,7 @@ async def ping(client, m: Message):
    delta_ping = time() - start
    uptime_sec = (current_time - START_TIME).total_seconds()
    uptime = await _human_time_duration(int(uptime_sec))
-   await m_reply.edit(f"`{delta_ping * 1000:.3f} ms` \n**Uptime ⏳** - `{uptime}`")
+   await m_reply.edit(f"`{delta_ping * 1000:.3f} ms` \n**Standtime 🔥** - `{uptime}`")
 
 @Client.on_message(contact_filter & filters.command(['restart'], prefixes=f"{HNDLR}"))
 async def restart(client, m: Message):
@@ -48,5 +48,5 @@ async def restart(client, m: Message):
 
 @Client.on_message(contact_filter & filters.command(['help'], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
-   HELP = f"**HELP MENU 🛠** \n\n__USER COMMANDS__ (Anyone can Use if `GROUP_MODE` is set to `True`): \n`{HNDLR}play` \n`{HNDLR}vplay` \n`{HNDLR}stream` (For Radio links) \n`{HNDLR}vstream` (For .m3u8 / live links) \n`{HNDLR}playfrom [channel] ; [n]` - Plays last n songs from channel \n`{HNDLR}playlist` / `{HNDLR}queue` \n\n__SUDO COMMANDS__ (Can only be accessed by You and Your Contacts): \n`{HNDLR}ping` \n`{HNDLR}skip` \n`{HNDLR}pause` and `{HNDLR}resume` \n`{HNDLR}stop` / `{HNDLR}end` \n`{HNDLR}help` \n`{HNDLR}restart`"
+   HELP = f"**NECESSARY COMMANDS 🛠** \n\n__USER COMMANDS__ (Anyone can Use if `GROUP_MODE` is set to `True`): \n`{HNDLR}play` \n`{HNDLR}playfrom [channel] ; [n]` - Plays last n songs from channel \n`{HNDLR}playlist` / `{HNDLR}queue` \n\n__SUDO COMMANDS__ (Can only be accessed by You and Your Contacts): \n`{HNDLR}ping` \n`{HNDLR}skip` \n`{HNDLR}pause` and `{HNDLR}resume` \n`{HNDLR}stop` / `{HNDLR}end` \n`{HNDLR}help` \n`{HNDLR}restart`"
    await m.reply(HELP)
