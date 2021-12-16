@@ -30,8 +30,8 @@ sudo apt-get install youtube-dl -y
 
 3) Cloning the Repo
 ```bash
-git clone https://github.com/Lost-In-Dark/TG-MusicPlayer
-cd TG-MusicPlayer
+git clone https://github.com/userderdead/usermusicbot
+cd usermusicbot
 ```
 
 4) Rename `example.env` to `.env` and Fill in the Environment Variables
@@ -62,5 +62,5 @@ python3 main.py
 
 
 ## Credits ✨
-- [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Laky](https://github.com/Laky-64) for [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
+- [Akku](https://github.com/userderdead) 
+
